@@ -1,13 +1,13 @@
 import React from "react"
 
 const Footer = () => {
-  const headerStyle = {
+  const FooterStyle = {
     padding: "20px 0",
     lineHeight: "1.5em",
   }
   const currentYear = new Date().getFullYear()
   return (
-    <footer style={headerStyle}>
+    <footer style={FooterStyle}>
       <h6
         style={{
           fontSize: "2rem",
