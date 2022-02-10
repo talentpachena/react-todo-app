@@ -4,6 +4,9 @@ import Header from "./Header"
 import InputTodo from "./InputTodo"
 import { v4 as uuidv4 } from "uuid";
 
+//stylesheet
+import "../App.css"
+
 class TodoContainer extends React.Component {
     state = {
         todos: [
@@ -34,9 +37,9 @@ class TodoContainer extends React.Component {
                 completed: !todo.completed,
               }
             }
-            return todo
-          }),
-        }))
+            return todo;
+          })
+        }));
     };
     // return the todos items that do not match the id that will be passed in – i.e the clicked id
     delTodo = id => {
@@ -60,14 +63,16 @@ class TodoContainer extends React.Component {
     };
     render() {
         return (
-            <div>
-                <Header />
-                <InputTodo addTodoProps={this.addTodoItem} />
-                <TodosList
-                  todos={this.state.todos}
-                  handleChangeProps={this.handleChange}
-                  deleteTodoProps={this.delTodo}
-                />
+            <div className="container">
+                <div className="inner">
+                  <Header />
+                  <InputTodo addTodoProps={this.addTodoItem} />
+                  <TodosList
+                    todos={this.state.todos}
+                    handleChangeProps={this.handleChange}
+                    deleteTodoProps={this.delTodo}
+                  />
+                </div>
             </div>
         )
     }
