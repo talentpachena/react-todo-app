@@ -5,6 +5,7 @@ const Footer = () => {
     padding: "20px 0",
     lineHeight: "1.5em",
   }
+  const currentYear = new Date().getFullYear()
   return (
     <footer style={headerStyle}>
       <h6
@@ -19,6 +20,7 @@ const Footer = () => {
           backgroundColor: "#74BBFB",
         }}
       >
+        <p>&copy;Talent Pachena: {currentYear}</p>
         Designed and Developed using Reactjs by Talent Pachena
       </h6>
     </footer>
