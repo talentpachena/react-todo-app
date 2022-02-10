@@ -3,6 +3,7 @@ import TodosList from "./TodosList";
 import Header from "./Header"
 import InputTodo from "./InputTodo"
 import { v4 as uuidv4 } from "uuid";
+import Footer from "./Footer"
 
 //stylesheet
 import "../App.css"
@@ -72,6 +73,7 @@ class TodoContainer extends React.Component {
                     handleChangeProps={this.handleChange}
                     deleteTodoProps={this.delTodo}
                   />
+                  <Footer />
                 </div>
             </div>
         )

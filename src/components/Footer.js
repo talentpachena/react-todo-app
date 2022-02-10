@@ -1,15 +1,15 @@
 import React from "react"
 
-const Header = () => {
+const Footer = () => {
   const headerStyle = {
     padding: "20px 0",
     lineHeight: "1.5em",
   }
   return (
-    <header style={headerStyle}>
-      <h1
+    <footer style={headerStyle}>
+      <h6
         style={{
-          fontSize: "6rem",
+          fontSize: "2rem",
           fontWeight: "600",
           marginBottom: "2rem",
           lineHeight: "1em",
@@ -19,10 +19,10 @@ const Header = () => {
           backgroundColor: "#74BBFB",
         }}
       >
-        Todos ...
-      </h1>
-    </header>
+        Designed and Developed using Reactjs by Talent Pachena
+      </h6>
+    </footer>
   )
 }
 
-export default Header
+export default Footer
